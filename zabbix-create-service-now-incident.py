@@ -3,7 +3,7 @@
 ## Create Service-Now incident from Zabbix
 ## Copyright (C) 2001-2015 Jan Garaj - www.jangaraj.com
 ## Doc: http://wiki.servicenow.com/index.php?title=Python_Web_Services_Client_Examples
-## WSDL doc: https://<your_instance>.service-now.com/u_generic_incident.do?WSDL
+## WSDL doc: https://<your_instance>.service-now.com/incident.do?WSDL
 ##
 
 debug     = 0                 # 0/1 - enable/disable debug outputs
@@ -85,37 +85,37 @@ zabbix2servicenow = {
         'short_description': '^Trigger: .*',
         'zabbix_event_id': '^Zabbix event ID: .*',
     },
-    # maps int value to Service Now value
+    # maps Zabbix value -> Service Now value
     'maps': {
         'impact': {
             # ServiceNow: 1 - High, 2 - Medium, 3 - Low
             # Zabbix:     0 - Not classified, 1 - Information, 2 - Warning, 3 - Average, 4 - High, 5  - Disaster
-            '0': '3',
-            '1': '3',
-            '2': '2',
-            '3': '2',
-            '4': '1',
-            '5': '1',
+            '0': 'Low',
+            '1': 'Low',
+            '2': 'Medium',
+            '3': 'Medium',
+            '4': 'High',
+            '5': 'High',
         },
         'urgency': {
             # ServiceNow: 1 - Immediate, 2 - Prompt, 3 - Non-urgent
             # Zabbix:     0 - Not classified, 1 - Information, 2 - Warning, 3 - Average, 4 - High, 5  - Disaster
-            '0': '3',
-            '1': '3',
-            '2': '2',
-            '3': '2',
-            '4': '1',
-            '5': '1',
+            '0': 'Non-urgent',
+            '1': 'Non-urgent',
+            '2': 'Prompt',
+            '3': 'Prompt',
+            '4': 'Immediate',
+            '5': 'Immediate',
         },
         'priority': {
             # ServiceNow: 1 - Critical, 2 - Error, 3 - Moderate, 4 - Low, 5 - Project
             # Zabbix:     0 - Not classified, 1 - Information, 2 - Warning, 3 - Average, 4 - High, 5  - Disaster
-            '0': '5',
-            '1': '4',
-            '2': '3',
-            '3': '2',
-            '4': '1',
-            '5': '1',
+            '0': '4 - Low',
+            '1': '4 - Low',
+            '2': '3 - Moderate',
+            '3': '2 - Error',
+            '4': '1 - Critical',
+            '5': '1 - Critical',
         }
     },
     # static
