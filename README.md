@@ -1,8 +1,10 @@
-Create ServiceNow ticket from Zabbix
-====================================
+ServiceNow tickets from Zabbix
+==============================
 
 Python script for custom Zabbix script media. Script uses ServiceNow API.
 
+[![Paypal donate button](http://jangaraj.com/img/github-donate-button02.png)]
+(https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8LB6J222WRUZ4)
 
 Installation
 ============
@@ -11,7 +13,7 @@ Copy the `zabbix-create-service-now-incident.py` script into the `AlertScriptsPa
 directory which is by default `/usr/lib/zabbix/alertscripts` and make it executable:
 
     $ cd /usr/lib/zabbix/alertscripts
-    $ wget https://raw.github.com/jangaraj/zabbix-script-servicenow/master/zabbix-create-service-now-incident.py 
+    $ wget https://raw.github.com/monitoringartist/zabbix-script-servicenow/master/zabbix-create-service-now-incident.py 
     $ chmod 755 zabbix-create-service-now-incident.py
 
 Configuration
@@ -93,4 +95,10 @@ in server response, what is a problem.
 Author
 ======
 
-[Devops Monitoring zExpert](http://www.jangaraj.com), who loves monitoring systems, which start with letter Z. Those are Zabbix and Zenoss. [LinkedIn] (http://uk.linkedin.com/in/jangaraj/).
+[Devops Monitoring zExpert](http://www.jangaraj.com), who loves monitoring 
+systems, which start with letter Z. Those are Zabbix and Zenoss.
+
+Professional monitoring services:
+
+[![Monitoring Artist](http://monitoringartist.com/img/github-monitoring-artist-logo.jpg)]
+(http://www.monitoringartist.com)
