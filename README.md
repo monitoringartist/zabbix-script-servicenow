@@ -1,13 +1,15 @@
-ServiceNow tickets from Zabbix
-==============================
+[<img src="https://monitoringartist.github.io/managed-by-monitoringartist.png" alt="Managed by Monitoring Artist: DevOps / Docker / Kubernetes / AWS ECS / Zabbix / Zenoss / Terraform / Monitoring" align="right"/>](http://www.monitoringartist.com 'DevOps / Docker / Kubernetes / AWS ECS / Zabbix / Zenoss / Terraform / Monitoring')
+
+# ServiceNow tickets from Zabbix
 
 Python script for custom Zabbix script media. Script uses ServiceNow API.
 
-[![Paypal donate button](http://jangaraj.com/img/github-donate-button02.png)]
-(https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8LB6J222WRUZ4)
+Please donate to the author, so he can continue to publish other awesome projects
+for free:
 
-Installation
-============
+[![Paypal donate button](http://jangaraj.com/img/github-donate-button02.png)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8LB6J222WRUZ4)
+
+# Installation
 
 Copy the `zabbix-create-service-now-incident.py` script into the `AlertScriptsPath` 
 directory which is by default `/usr/lib/zabbix/alertscripts` and make it executable:
@@ -16,8 +18,7 @@ directory which is by default `/usr/lib/zabbix/alertscripts` and make it executa
     $ wget https://raw.github.com/monitoringartist/zabbix-script-servicenow/master/zabbix-create-service-now-incident.py 
     $ chmod 755 zabbix-create-service-now-incident.py
 
-Configuration
-=============
+# Configuration
 
 To forward Zabbix events to ServiceNow a new media script needs to be created 
 and associated with a user. Follow the steps below as a Zabbix Admin user:
@@ -81,8 +82,7 @@ Send to Users: Admin
 Send only to: ServiceNow API
 ```
 
-Troubleshooting
-===============
+# Troubleshooting
 
 Set debug to 1 in the script for debug output:
 ``` 
@@ -92,13 +92,18 @@ And test script in commandline manually. It is very likely, that your ServiceNow
 instance has different settings (mandatory fields, lists, ...). You should to see 
 in server response, what is a problem.
 
-Author
-======
+# Author
 
-[Devops Monitoring zExpert](http://www.jangaraj.com), who loves monitoring 
-systems, which start with letter Z. Those are Zabbix and Zenoss.
+[Devops Monitoring Expert](http://www.jangaraj.com 'DevOps / Docker / Kubernetes / AWS ECS / Google GCP / Zabbix / Zenoss / Terraform / Monitoring'),
+who loves monitoring systems and cutting/bleeding edge technologies: Docker,
+Kubernetes, ECS, AWS, Google GCP, Terraform, Lambda, Zabbix, Grafana, Elasticsearch,
+Kibana, Prometheus, Sysdig,...
 
-Professional monitoring services:
+Summary:
+* 2000+ [GitHub](https://github.com/monitoringartist/) stars
+* 10 000+ [Grafana dashboard](https://grafana.net/monitoringartist) downloads
+* 1 000 000+ [Docker image](https://hub.docker.com/u/monitoringartist/) pulls
 
-[![Monitoring Artist](http://monitoringartist.com/img/github-monitoring-artist-logo.jpg)]
-(http://www.monitoringartist.com)
+Professional devops / monitoring / consulting services:
+
+[![Monitoring Artist](http://monitoringartist.com/img/github-monitoring-artist-logo.jpg)](http://www.monitoringartist.com 'DevOps / Docker / Kubernetes / AWS ECS / Google GCP / Zabbix / Zenoss / Terraform / Monitoring')
